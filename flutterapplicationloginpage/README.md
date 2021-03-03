@@ -7,4 +7,6 @@ A new Flutter application.
 Sign up and then you are one of our supporters.
 Support Dokdo.
 
- <img class="img-concert" src="https://dokdo.mofa.go.kr/m/eng/img/main/picSlide3.jpg" />
+
+
+<img src="https://dokdo.mofa.go.kr/m/eng/img/main/picSlide3.jpg" />
