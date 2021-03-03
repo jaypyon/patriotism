@@ -1,7 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-//import 'package:flutter/cupertino.dart';
+import 'data/join_or_login.dart';
+import 'screens/login.dart';
+import 'package:provider/provider.dart';
 
-void main() => runApp(MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 //모든 컴포넌트가 위젯이다. 위젯트리형식 ( 리엑트의 돔트리같은 느낌인듯 )
 
 class MyApp extends StatelessWidget{
@@ -12,11 +19,11 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     //TODO : implement build
     return MaterialApp(
-      //클래스 :
-      home: Scaffold(
-
-      ),
+      home:ChangeNotifierProvider<JoinOrLogin>.value(
+          value:JoinOrLogin(),
+          child: AuthPage()),
     );
+
   }
 }
 
