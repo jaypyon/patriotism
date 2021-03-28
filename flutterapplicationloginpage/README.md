@@ -4,7 +4,7 @@ A new Flutter application.
 
 ## Getting Started
 
-Sign up and then you are one of our supporters.
+Sign up then you are one of our supporters.
 Support Dokdo.
 
 
